@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/Home.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="grid">
+    <!--------------------------------------------------------------Header--------------------------------------------------------------------->
+    <header>
+        <nav class="flex">
+            <ul class="flex">
+                <li class="selected"><a href="#" class="flex"><img src="img/Home.svg" alt="Home page icon" class="icon"></a></li>
+                <li class="back-white"><a href="mascotas.html" class="flex"><img src="img/pets.png" alt="Pets page icon" class="icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--------------------------------------------------------------Main--------------------------------------------------------------------->
+    <main>
+         <!--------------------------------------------------------------Profile--------------------------------------------------------------------->
+        <section id="profile" class="grid">
+            <article id="profile-picture" class="flex">
+                <img src="img/picture.svg" alt="My picture">
+            </article>
+            <article id="profile-information" class="flex">
+                <div>
+                    <h1>Hi, I’m Santiago</h1>
+                    <p>Software Developer</p>
+                </div>
+                <div class="flex">
+                    <a href="https://github.com/szapatar08" target="_blank"><img src="img/Github.svg" alt="Github icon" class="back-white icon"></a>
+                    <a href="https://www.linkedin.com/in/santiago-zapata-rendon/" target="_blank"><img src="img/Linkedin.svg" alt="Linkedin icon" class="back-white icon"></a>
+                    <a href="" target="_blank"><img src="img/X.svg" alt="X icon" class="back-white icon"></a>
+                </div>
+            </article>
+        </section>
+        <!--------------------------------------------------------------Repo--------------------------------------------------------------------->
+        <section id="repo">
+            <div id="python-html" class="grid">
+                <article class="flex language-container">
+                    <div class="flex container">
+                        <div class="flex language-name">
+                            <img src="img/Python.svg" alt="Python icon">
+                            <h2>Python</h2>
+                        </div>
+                        <div class="flex">
+                            <a href="https://github.com/szapatar08/Personal-budget" class="items hover_grey" target="_blank">personal-budget</a>
+                            <a href="https://github.com/szapatar08/Bank-account-manager" class="items hover_grey" target="_blank">bank-account-manager</a>
+                        </div>
+                        <a href="repository.html" class="more">See more ...</a>
+                    </div>
+                </article>
+                <article class="flex language-container">
+                    <div class="flex container">
+                        <div class="flex language-name">
+                            <img src="img/CSS.svg" alt="CSS icon">
+                            <h2>HTML / CSS</h2>
+                        </div>
+                        <div class="flex">
+                            <a href="https://github.com/szapatar08/HTML-CSS-module-project" class="items hover_grey" target="_blank">html-css-module-project</a>
+                            <a href="https://github.com/szapatar08/test-landing" class="items hover_grey" target="_blank">test-landing</a>
+                        </div>
+                        <a href="repository.html" class="more">See more ...</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------------------------------Footer--------------------------------------------------------------------->
+    <footer class="grid">
+        <section id="home-repo" class="flex">
+            <ul class="flex">
+                <li class="flex"><img src="img/Home.svg" alt="Home page icon" class="icon"> <a href="#">Home</a></li>
+            </ul>
+        </section>
+        <section id="made" class="flex">
+            <p>Made by Santiago</p>
+        </section>
+        <section id="me" class="flex">
+            <ul class="flex">
+                <li class="flex"><img src="img/pets.png" alt="About me page icon" class="icon"> <a href="mascotas.html">Mascotas</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

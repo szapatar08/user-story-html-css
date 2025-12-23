@@ -1,0 +1,215 @@
+/*General Settings*/
+:root {
+    font-size: 24px;
+}
+
+* {
+    font-family: "Azeret Mono", monospace;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    grid-template-rows: auto 3fr auto;
+    background-color: #202020;
+    color: #D9D9D9;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.back-white {
+    background-color: #D9D9D9;
+}
+
+.selected {
+    background-color: #7B7B7B;
+}
+
+.selected:hover {
+    border: 2px solid #D9D9D9;
+    padding: 3px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+/*Header*/
+header {
+    padding: 3% 10%;
+    width: 80%;
+}
+
+header nav {
+    justify-content: center;
+}
+
+header nav ul {
+    width: 10%;
+    justify-content: space-between;
+    padding: 2%;
+    border: 2px solid #D9D9D9;
+    border-radius: 50px;
+}
+
+header nav ul li {
+    padding: 5px;
+    border-radius: 30%;
+    padding: 5px;
+}
+
+header nav ul li:hover {
+    background-color: #7B7B7B;
+}
+
+/*Main*/
+/*----Profile----*/
+main #profile {
+    padding: 3% 10%;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+main #profile #profile-picture {
+    justify-content: end;
+}
+
+main #profile #profile-picture img {
+    width: 50%;
+    height: auto;
+    border-radius: 30%;
+}
+
+main #profile #profile-information {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+main #profile #profile-information h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main #profile #profile-information .flex {
+    justify-content: space-between;
+}
+
+main #profile #profile-information .flex .icon:hover {
+    background-color: #7B7B7B;
+}
+
+main #profile #profile-information img {
+    padding: 5px;
+    border-radius: 30%;
+}
+
+/*----Repo----*/
+main #repo {
+    padding: 3% 10% 5%;
+    width: 80%;
+}
+
+main #repo #python-html {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+main #repo #python-html article .container {
+    border: 2px solid #D9D9D9;
+    padding: 7% 1%;
+    width: 100%;
+}
+
+main #repo #python-html .flex {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+main #repo #python-html .flex .items {
+    width: 80%;
+    padding: 3%;
+    border-radius: 50px;
+    color: #000;
+    background-color: #D9D9D9;
+}
+
+main #repo #python-html .flex .items:hover {
+    background-color: #7B7B7B;
+}
+
+main #repo #python-html .flex .language-name {
+    width: 40%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    color: #000;
+    padding: 2% 5%;
+}
+
+main #repo #python-html .flex .more {
+    color: #D9D9D9;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+main #repo #python-html .flex .more:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/*Footer*/
+footer {
+    background-color: #D9D9D9;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3% 5%;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+footer a, footer p {
+    color: #000;
+}
+
+footer #home-repo ul li, footer #me ul li {
+    gap: 20px;
+    align-items: center;
+}
+
+footer #home-repo ul, footer #me ul {
+    gap: 20px;
+    flex-direction: column;
+}
+
+footer #made {
+    justify-content: center;
+    align-items: end;
+}
+
+footer #me {
+    justify-content: end;
+}
