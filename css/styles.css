@@ -195,6 +195,29 @@ main #contact-me form textarea {
     height: 100px;
 }
 
+/*----Animals----*/
+main #animals {
+    padding: 1% 10% 5%;
+    width: 80%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+main #animals article {
+    grid-template-rows: 1fr auto 1fr;
+    gap: 20px;
+}
+
+main #animals article img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+main #animals article h2 {
+    font-size: 1.5rem;
+}
+
 /*Footer*/
 footer {
     background-color: #D9D9D9;
