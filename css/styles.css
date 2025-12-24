@@ -46,6 +46,10 @@ body {
     width: 50px;
 }
 
+.hide {
+    display: none;
+}
+
 /*Header*/
 header {
     padding: 3% 10%;
@@ -223,6 +227,20 @@ main #animals .grid img {
 
 main #animals article h2 {
     font-size: 1.5rem;
+}
+
+.more {
+    padding: 20px 50px;
+    border-radius: 50px;
+    color: #D9D9D9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #D9D9D9;
+    cursor: pointer;
+}
+
+.more:hover {
+    background-color: #D9D9D9;
+    color: #000;
 }
 
 /*Footer*/
