@@ -96,6 +96,10 @@ main #profile #profile-picture img {
 main #profile #profile-information {
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
+}
+
+main #profile #profile-information #profile-name {
     width: 50%;
 }
 
@@ -106,6 +110,7 @@ main #profile #profile-information h1 {
 
 main #profile #profile-information .flex {
     justify-content: space-between;
+    width: 50%;
 }
 
 main #profile #profile-information .flex .icon:hover {
@@ -255,6 +260,10 @@ footer #me {
 
 /*Medias*/
 @media (max-width: 1500px){
+    main #repo #python-html {
+        grid-template-columns: 1fr;
+    }
+
     main #animals {
         grid-template-columns: repeat(2,1fr);
     }
@@ -266,12 +275,29 @@ footer #me {
 }
 
 @media (max-width: 950px) {
+    main #profile {
+        grid-template-columns: 1fr;
+    }
+
+    main #profile #profile-picture {
+        justify-content: center;
+    }
+
+    main #profile #profile-information {
+        gap: 20px;
+        align-items: center;
+    }
+
     main #animals {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 600px) {
+    main #repo .icon {
+        display: none;
+    }
+
     footer {
         grid-template-columns: 1fr;
     }
