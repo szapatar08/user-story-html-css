@@ -57,11 +57,11 @@ header nav {
 }
 
 header nav ul {
-    width: 10%;
-    justify-content: space-between;
-    padding: 2%;
+    justify-content: center;
+    padding: 30px 50px;
     border: 2px solid #D9D9D9;
     border-radius: 50px;
+    gap: 20%;
 }
 
 header nav ul li {
@@ -208,7 +208,7 @@ main #animals article {
     gap: 20px;
 }
 
-main #animals article img {
+main #animals .grid img {
     height: 100%;
     width: 100%;
     border-radius: 5px;
@@ -251,4 +251,28 @@ footer #made {
 
 footer #me {
     justify-content: end;
+}
+
+/*Medias*/
+@media (max-width: 1500px){
+    main #animals {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    main #animals .grid img {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 950px) {
+    main #animals {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
 }
