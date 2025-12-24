@@ -194,10 +194,12 @@ main #contact-me form input, main #contact-me form button, main #contact-me form
     padding: 1% 2%;
     border-radius: 50px;
     width: 90%;
+    max-width: 90%;
 }
 
 main #contact-me form textarea {
-    height: 100px;
+    height: 200px;
+    max-height: 200px;
 }
 
 /*----Animals----*/
